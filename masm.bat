@@ -2,9 +2,9 @@
 
 rem Paths used in the ml command below.
 rem IMPORTANT: You will need to update this if you installed VS in a different location.
-SET visualStudioDir=C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110
-SET crtLibPath=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\ucrt\x86
-SET uuidPath=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.17763.0\um\x86
+SET visualStudioDir=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705
+SET crtLibPath=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\ucrt\x86
+SET uuidPath=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um\x86
 
 rem Process special command line arguments.  No param means we want to show the usage while passing in /? will 
 rem display MASM's help.  It currently doesn't display the help for the linker.

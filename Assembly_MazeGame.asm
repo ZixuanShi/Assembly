@@ -34,7 +34,7 @@ extern rand:NEAR        ; Generate random number
         ;----------------------------------------------------------        
         kMapHeight dd 7       ; Height of game map
         kMapWidth  dd 10      ; Width of game map
-        gameMap   db 70 DUP('.'), 0     ; Array of char, used for game map
+        gameMap    db 70 DUP('.'), 0     ; Array of char, used for game map
 
         ;----------------------------------------------------------
         ; Game Objects
@@ -47,7 +47,7 @@ extern rand:NEAR        ; Generate random number
         kEmptySpace    db '.', 0        ; Empty space symbol
         kEnemySymbol   db 'E', 0        ; Enemy symbol
         kEnemyCount    dd 1             ; Enemy count
-        enemyPosition  dd ?             ; Enemy's position
+        enemyPosition  dd 0             ; Enemy's position
 
         ;----------------------------------------------------------
         ; User movement input
@@ -486,11 +486,11 @@ Move PROC
         ;------------------------------------------------------------------------
         ; Do work
         ;       - switch(input)
-        ;               case kUp: 
-        ;		    if (objectPosition - kWidth >= 0)
-	    ;	        {
-	    ;		        objectPosition -= kWidth;
-	    ;	        }
+        ;           case kUp: 
+        ;		        if (objectPosition - kWidth >= 0)
+	    ;	            {
+	    ;		            objectPosition -= kWidth;
+	    ;	            }
 	    ;	        return;
         ;               ...
         ;------------------------------------------------------------------------
@@ -499,7 +499,7 @@ Move PROC
 
         ; Mov objectPosition to eax and edx for calculations in each move direction Label
         mov eax, [ebp+12] ; Final return result
-        mov edx, [ebp+12] ; EDXi is used for checking edges statements
+        mov edx, [ebp+12] ; EDX is used for checking edges statements
 
         ; Consider this as a switch statement.
         ; if input is 's', 'w' - 's' = 4 in decimal. Go to MoveDown label.
