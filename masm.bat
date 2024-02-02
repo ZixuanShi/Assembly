@@ -2,7 +2,7 @@
 
 rem Paths used in the ml command below.
 rem IMPORTANT: You will need to update this if you installed VS in a different location.
-SET visualStudioDir=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705
+SET visualStudioDir=C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.31.31103
 SET crtLibPath=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\ucrt\x86
 SET uuidPath=C:\Program Files (x86)\Windows Kits\10\Lib\10.0.19041.0\um\x86
 
