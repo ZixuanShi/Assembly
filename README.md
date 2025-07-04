@@ -1,5 +1,7 @@
 # Assembly
-For my Assembly projects
+I write raw Assembly code just for fun. I have:
+- Text-based maze game
+- Quick-sort implementation
 
 ## Compile and Run the assembly projects
 - Install Visual Studio Code and the "x86 and x86_64 Assembly" Extension
